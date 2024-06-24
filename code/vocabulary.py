@@ -8,6 +8,27 @@ simple_vocabulary = [
     "VPN",
     "DNS",
     "minecraft",
+    "hey",
+    "HTML",
+    "div",
+    "dev",
+    "null",
+    "Wrapper",
+    "site",
+    "app",
+    "auto",
+    "font",
+    "css",
+    "y'all",
+    "null",
+    "vercel",
+    "netlify",
+    "todo",
+    "async",
+    "res",
+    "req",
+    "unstyled",
+    "auth"
 ]
 
 mapping_vocabulary = {
@@ -16,12 +37,25 @@ mapping_vocabulary = {
     "i've": "I've",
     "i'll": "I'll",
     "i'd": "I'd",
+    "source": "src",
+    "oto": "auto",
+    "como": "comeau",
+    "centre": "center",
+    "docks": "docs",
+    "kama": "comma",
+    "end": "and",
+    "hay folks": "Hey folks",
+    "pading": "padding",
+    "fond": "font",
+    "fon": "font",
+    "zed index": "z-index",
+    "cs": "css",
+    "noll": "null",
 }
 
 mapping_vocabulary.update(dict(zip(simple_vocabulary, simple_vocabulary)))
 
 mod = Module()
-
 def remove_dragon_junk(word):
     return str(word).lstrip("\\").split("\\")[0]
 
